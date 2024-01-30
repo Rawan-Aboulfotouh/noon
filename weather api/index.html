@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <linK href="css/bootstrap.min.css" rel="stylesheet">
+            <linK href="css/all.min.css" rel="stylesheet">
+                <linK href="css/index-style.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg  ">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white"  href="https://www.weatherapi.com/my/"><img src="img/logo.png"> Weather </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse display " id="navbarNav">
+      <ul class="navbar-nav  ">
+        <li class="nav-item ">
+          <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Life cameras</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Contact</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<form >
+  
+  <input  type="text" id="search" class="form-control w-75 m-auto mt-5 p-3 search rounded-pill" placeholder="Enter Location ">
+  <button class="btn btn-primary m-auto w-25 d-flex justify-content-center align-items-center mt-3 rounded-pill " value="Find"> Find</button>
+  
+  
+</form>
+
+<!-- <div class="container-fluid text-bg-primary "> -->
+<div class="row g-0 mt-5 ">
+  <div class="col-md-4 bg-black m-0 rounded-4">
+    <div class="d-flex justify-content-between py-2 px-3 text-light rounded-start" id="today-date" >
+      <p id="today-date-name" class="m-auto "> Sunday </p>
+      <span>
+        <span id="today-date-name" class="my-auto">30</span>
+        <span id="today-date-month" class="my-auto">May</span>
+      </span>
+
+    </div>
+
+  </div>
+</div>
+<div class="item-content text-start p-3 pt-5 text-light" id="today">
+  <p id="today-location " class="fs-4"> Cairo</p>
+  <div class="d-flex justify-content-between align-items-center">
+    <span class="fs-1 fw-bold" >
+      <span id="today-temp">20</span>
+      <span><sup>o</sup>C</span>
+    </span>
+    <img class="today-cond-img" src="img/116.webp">
+    <p id="today-cond-text" class="fs-6 text-light-blue"> Sunny</p>
+
+  </div>
+  <div class="item-footer d-flex text-light p-3">
+    <div class="d-flex me-2">
+      <img class="footer-icons me-2" src="img/icon-umberella.png">
+      <p id="humidity">20</p>
+
+    </div>
+    <div class="d-flex me-2">
+      <img class="footer-icons mx-2" src="img/icon-wind.png">
+      <p id="wind"> 30km/h</p>
+
+  </div>
+  <div class="d-flex me-2">
+    <img class="footer-icons mx-2" src="img/icon-compass.png">
+    <p id="wind-direction"> NNE</p>
+
+
+</div>
+  </div>
+  <div class="row g-0 mt-5 ">
+    <div class="col-md-4 bg-black m-0 rounded-4">
+      <div class="d-flex justify-content-between py-2 px-3 text-light rounded-start" id="today-date" >
+        <p id="today-date-name" class="m-auto "> Sunday </p>
+        <span>
+          <span id="today-date-name" class="my-auto">30</span>
+          <span id="today-date-month" class="my-auto">May</span>
+        </span>
+  
+      </div>
+      <div class=" col-md-4 m-0 bg-main-color">
+        <div class="py-2 text-center text-light bg-sec-color " id="tomorrow-date">
+          <p class="next-day-name my-auto"> Friday</p>
+        </div>
+        <div class="item-content  text-start text-light p-3  text-center pt-5" id="tomorrow">
+          <img class="next-cond-img" src="img/176.webp">
+          <h3>
+            <span class="next-max-temp"></span>
+            <span><sup>o</sup>C</span>
+          </h3>
+          <h5 class="text-muted">
+            <span class="next-min-temp">15</span>
+            <span><sup>o</sup>C</span>
+    
+          </h5>
+          <p class="next-cond-text fs-6 text-light-blue " > Partialy cloudy </p>
+        </div>
+    
+      </div>
+  
+    </div>
+  </div>
+  <div class=" col-md-4 m-0 bg-main-color">
+    <div class="py-2 text-center text-light bg-sec-color " id="tomorrow-date">
+      <p class="next-day-name my-auto"> Friday</p>
+    </div>
+    <div class="item-content  text-start text-light p-3  text-center pt-5" id="tomorrow">
+      <img class="next-cond-img" src="img/176.webp">
+      <h3>
+        <span class="next-max-temp"></span>
+        <span><sup>o</sup>C</span>
+      </h3>
+      <h5 class="text-muted">
+        <span class="next-min-temp">15</span>
+        <span><sup>o</sup>C</span>
+
+      </h5>
+      <p class="next-cond-text fs-6 text-light-blue " > Partialy cloudy </p>
+    </div>
+
+  </div>
+  <div class="row g-0 mt-5 ">
+    <div class="col-md-4 bg-black m-0 rounded-4">
+      <div class="d-flex justify-content-between py-2 px-3 text-light rounded-start" id="today-date" >
+        <p id="today-date-name" class="m-auto "> Sunday </p>
+        <span>
+          <span id="today-date-name" class="my-auto">30</span>
+          <span id="today-date-month" class="my-auto">May</span>
+        </span>
+        <div class=" col-md-4 m-0 bg-main-color">
+          <div class="py-2 text-center text-light bg-sec-color " id="tomorrow-date">
+            <p class="next-day-name my-auto"> Friday</p>
+          </div>
+          <div class="item-content  text-start text-light p-3  text-center pt-5" id="tomorrow">
+            <img class="next-cond-img" src="img/176.webp">
+            <h3>
+              <span class="next-max-temp"></span>
+              <span><sup>o</sup>C</span>
+            </h3>
+            <h5 class="text-muted">
+              <span class="next-min-temp">15</span>
+              <span><sup>o</sup>C</span>
+      
+            </h5>
+            <p class="next-cond-text fs-6 text-light-blue " > Partialy cloudy </p>
+          </div>
+      
+        </div>
+        
+  
+      </div>
+  
+    </div>
+  </div>
+  
+   
+
+
+
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/all.min.js"></script>
+        <script src="mine.js"></script>
+
+    </body>
+</html>

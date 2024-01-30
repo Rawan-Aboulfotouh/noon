@@ -1,0 +1,34 @@
+body{
+    background-image: url(../img/banner.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+   
+    background-repeat: repeat;
+    z-index: -9999;
+  
+}
+
+.navbar{
+    background-color: #1E202B;
+    padding: 50px;
+    
+    
+}
+*{
+   font-family: 'Inconsolata', monospace;
+}
+.display{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-right: 10px;
+}
+.search{
+    background-color: #1E202B;
+
+    
+}
+
+
+

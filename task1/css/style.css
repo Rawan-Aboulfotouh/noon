@@ -1,0 +1,102 @@
+/* navbar */
+*{ margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;}
+
+.navbar{
+    background-color: #FEEE00;
+}
+.navbar-brand{
+    color: #404553;
+    font-size: 30px;
+    font-weight: medium
+    ;
+    font-weight: bold;
+}
+.navbar .img1{
+    width: 50px;
+}
+
+sub{
+    color: #404553;
+    font-size: 15px;
+
+}
+.menu{
+    border: none;
+    
+}
+.nav-item{
+    list-style: none;
+}
+
+.mini{
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+   
+    
+}
+
+
+    .car {
+      
+        max-height: 500px ; 
+
+
+
+}
+.mobile{
+    border: #404553;
+    border-radius: 5%;
+    border: 5px;
+    cursor: pointer;
+
+}
+
+.logo{
+    width: 60%;
+}
+.font{
+    font-size: 12px;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+   cursor: pointer;
+  
+    
+    
+}
+.bag
+{
+    width: 15px;
+    margin-left: 10px ;
+
+}
+.flash {
+   
+    
+    background-repeat: repeat;
+    width: 100%;
+   
+   
+    
+}
+.background{
+    background-color:#FFC404;
+    width: 100%;
+   
+}
+.offers{
+    cursor: pointer;
+}
+.recommend{
+    cursor: pointer;
+}
+.sale{
+    background-color: #FFF4E0;
+}

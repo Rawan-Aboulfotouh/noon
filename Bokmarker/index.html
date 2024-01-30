@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/all.min.css" rel="stylesheet">
+    </head>
+    <body class="home">
+
+        <h1 class="text-center  mt-5 text-primary"> Bookmarker</h1>
+        <div class="text-black text-center w-100 fw-bolder">..........................................................................................................................</div>
+
+        <h2 class="text-center text-white m-5 fw-bolder"><i class="fa-solid fa-book-bookmark text-black "></i> Book marek your favourite site <i class="fa-solid fa-book-bookmark text-black "></i></h2>
+
+        <div class="inp ms-5"> <i class="fa-solid fa-book-bookmark text-black "></i>
+            Site name
+            <input class="form-control w-75 my-2" id="sName"  placeholder="Bookmark Name">
+        
+        </div>
+
+        <div class="inp2 ms-5">
+            <i class="fa-solid fa-link text-black"></i> Site URL
+            <input class="form-control w-75 my-2" placeholder="Website URL" id="sUrl">
+
+        </div>
+        <button class="btn btn-primary ms-5 px-5 text-center  " onclick="webSite()"  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"> Submit</button>
+
+        <div class="text-black text-center w-100 fw-bolder mt-5">...................................</div>
+
+
+        <table class="table m-auto w-100 mt-5 bg-transparent text-center ">
+            <thead >
+                <th class="text-primary"> Index</th>
+                <th class="text-primary"> Website name</th>
+                <th class="text-primary"> Visit</th>
+                <th class="text-danger"> Delete</th>
+            </thead>
+           
+            <tbody id="tBody"></tbody>
+            
+        </table>
+
+        <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5 circles d-flex" id="exampleModalLabel">
+            <span class="rounded-circle"></span>
+            <span class="rounded-circle"></span>
+            <span class="rounded-circle"></span>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Site  URL ias nott valid one , please follow the rules below:
+          <ul >
+            <li> <i class="fa-regular fa-circle-right text-danger fs-4 me-3"></i>Site name must contain atleast 3 charecters
+              
+            </li>
+            <li> <i class="fa-regular fa-circle-right text-danger fs-4 me-2"></i>Site URL must be valid
+              
+            </li>
+          </ul>
+        
+         
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+        <script src="js/all.min.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/mine.js"></script>
+    </body>
+</html>

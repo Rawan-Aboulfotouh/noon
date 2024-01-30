@@ -1,0 +1,17 @@
+
+#home
+{
+    height: 1vh;
+    width:2%;
+}
+
+#home h1
+{
+    padding: 30px;
+    display: none;
+}
+
+.col-md-4
+{
+    display: none;
+}
